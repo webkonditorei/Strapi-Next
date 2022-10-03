@@ -12,6 +12,7 @@ query {
           splash {
             data {
               attributes {
+                name
                 url
               }
             }
@@ -25,4 +26,23 @@ query {
 `; 
 
 
-export { GET_ALL_BLOGPOSTS };
+const GET_ALL_ABOUTCONTENTS = gql `
+
+query {
+    aboutcontents
+    {
+      data
+      {
+        attributes
+        {
+          Kontakt
+          {
+            Titel 
+            Email
+            Telefon
+          
+          }}}}}
+
+`
+
+export { GET_ALL_BLOGPOSTS, GET_ALL_ABOUTCONTENTS };
